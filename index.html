@@ -1,0 +1,82 @@
+<html>
+<head>
+
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <div class="hidden">
+        <h1>Login</h1>
+        <form id="login-form">
+        <label>Username</label>
+        <input type="text" id="login-user"><br>
+        <label>Password</label>
+        <input type="text" id="login-pass"><br>
+        <button type="submit">Login</button>
+        </form>
+        <p id='login-status'></p>
+        <h1>Register</h1>
+        <form id="reg-form">
+        <label>Username</label>
+        <input type="text" id="reg-user"><br>
+        <label>Password</label>
+        <input type="text" id="reg-pass"><br>
+        <button type="submit">Register</button>
+        </form>
+        <p id='reg-status'></p>
+	<div  class="hidden">
+        <h1>Shopping Cart</h1>
+
+	<div class="products">
+        <div class="product">
+            <P Align="center"><img src="images1.png"   height="500" width="600"></P>
+            <h1 class="second-txt"><b> LEVIS JEANS</b></h1>
+            <h3><p>-><i> High waist<br> -> Clean Look<br> -> Cotton Blend <br>-> Light Fade</i></p></h3>
+            <p>Price: 60%off <s>1,034</s> $679</p>
+            <button class="add-to-cart" onclick="addToCart('MOM JEANS', 679)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <P Align="center"><img src="dolls.jpg" height="500" width="600"></P>
+            <h1 class="second-txt"><b> MUSICAL DOLLS</b></h1>
+            <h3><p>-><i> Handicrafts Paradise<br> -> Hand Made<br> -> 21 Inch, 3 piece<br>-> Iron Blend</i></p></h3>
+            <p>Price: 80%off <s>3,564</s> $1,275</p>
+            <button class="add-to-cart" onclick="addToCart('MUSICAL DOLLS', 1275)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <P Align="center"><img src="necklace.png" height="400" width="300"></P>
+            <h1 class="second-txt"><b>GIVA</b></h1>
+            <h3><p><i> Vembley Western Multilayered Black stone Locket for women and Girls Gold- plated Alloy Layered</i></p></h3>
+            <p>Price: 46%off <s>2,798</s> $1,505</p>
+            <button class="add-to-cart" onclick="addToCart('GIVA', 1505)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <P Align="center"><img src="dress.png" height="500" width="500"></P>
+            <h1 class="second-txt"><b>KASSUALLY</b> Women Kurti White Dress</h1>
+            <h3><p>-><i> Regular Sleeves</i><br>-><i> Boat Neck</i><br>-> <i>Long Length </i><br>-><i> Polyster</i></p></h3>
+            <p>Price: 75%off <s>2,095</s> $1,099</p>
+            <button class="add-to-cart" onclick="addToCart('KASSUALLY', 1099)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <P Align="center"><img src="guiter.png" height="600" width="400"></P>
+            <h1 class="second-txt"><b> REVEL</b></h1>
+            <h3><p>-><i> Acoustic Guiter<br> -> Linden Wood<br> ->Length  100 cm<br>-> Bluish</i></p></h3>
+            <p>Price: 36%off <s>2,499</s> $1,599</p>
+            <button class="add-to-cart" onclick="addToCart('REVEL', 1599)">Add to Cart</button>
+        </div>
+    	</div>
+
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total">0</span></p>
+            <button onclick="checksout()">Checkout</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
